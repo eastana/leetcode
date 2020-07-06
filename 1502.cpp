@@ -65,13 +65,7 @@ public:
         int n = arr.size();
         quicksort(arr,0,n-1);
         
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n-i-1;j++){
-                if(arr[j]>arr[j+1]){
-                    swap(arr[j],arr[j+1]);
-                }
-            }
-        }
+        
         
         bool check = true;
         int c = arr[1] - arr[0];
