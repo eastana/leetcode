@@ -34,7 +34,7 @@ void quicksort(vector < int > & a, int start, int end) {
 void merge(vector < int > & a, int left, int right, int mid) {
   int n1 = mid - left + 1;
   int n2 = right - mid;
-  int l[1000], r[1000];
+  int l[mid+right], r[mid+right];
   for (int i = 0; i < n1; i++)
     l[i] = a[left + i];
   for (int j = 0; j < n2; j++)
